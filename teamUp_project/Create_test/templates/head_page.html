@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block content %}
+
+<h1 style="text-align: center;">Тестовое задание Мансурова Андрея на позицию junior backend dev.</h1>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a href="https://web.postman.co" target="_blank" rel="noopener">Протестировать запросы</a></p>
+<p style="text-align: center;">&nbsp;</p>
+<ol>
+<li style="text-align: center;">Создание первого теста и генерация уникального логина &ndash; <span style="color: #0000ff;"><strong>api/v1/create_test/</strong></span></li>
+<li style="text-align: center;">&nbsp;Сохранение результатов теста IQ &ndash; <span style="color: #0000ff;"><strong>api/v1/save_iq_result/</strong></span></li>
+<li style="text-align: center;">Сохранение результатов теста EQ &ndash; <span style="color: #0000ff;"><strong>api/v1/save_eq_result/</strong></span></li>
+<li style="text-align: center;">Получение результатов обоих тестов по логину &ndash; <span style="color: #0000ff;"><strong>api/v1/find_result/</strong></span></li>
+</ol>
+<p>&nbsp;</p>
+<p style="text-align: center;">Подробное описание методов можно найти во <span style="text-decoration: underline;">views.py</span></p>
+
+{% endblock %}
+

@@ -21,5 +21,9 @@ from Create_test.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', head_page),
-    path('create/', create_test),
+    path('api/v1/create_test/', CreateTestAPIView.as_view()),
+    path('api/v1/save_iq_result/', SaveIqResultAPIView.as_view()),
+    path('api/v1/save_eq_result/', SaveEqResultAPIView.as_view()),
+    path('api/v1/find_result/', FindAllAnswerAPIView.as_view()),
+
 ]
